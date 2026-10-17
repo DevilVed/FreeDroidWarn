@@ -1,4 +1,4 @@
-package org.woheller69.freeDroidWarn;
+package org.DevilVed.freeDroidWarn;
 
 import android.app.AlertDialog;
 import android.content.Context;

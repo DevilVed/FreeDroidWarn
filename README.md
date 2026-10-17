@@ -1,3 +1,5 @@
+> **Fork notice:** This is DevilVed's fork of [woheller69/FreeDroidWarn](https://github.com/woheller69/FreeDroidWarn) (Apache License 2.0), modified to use the package `org.DevilVed.freeDroidWarn`. All credit for the original library goes to woheller69.
+
 # FreeDroidWarn
 
 ## Overview
@@ -69,7 +71,7 @@ Optional (**recommended**): Switch off USB debugging in Developer options until 
 
 Add the JitPack repository to your root `build.gradle` at the end of repositories:
 
-(If you are not using Groovy, see instructions on [Jitpack](https://jitpack.io/#woheller69/FreeDroidWarn))
+(If you are not using Groovy, see instructions on [Jitpack](https://jitpack.io/#DevilVed/FreeDroidWarn))
 
 ```gradle
 allprojects {
@@ -84,14 +86,14 @@ Add the library dependency to your `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation 'com.github.woheller69:FreeDroidWarn:V1.+'
+    implementation 'com.github.DevilVed:FreeDroidWarn:V1.+'
 }
 ```
 
 In `onCreate` of your app just add:
 
 ```java
-import org.woheller69.freeDroidWarn.FreeDroidWarn;
+import org.DevilVed.freeDroidWarn.FreeDroidWarn;
 ...
 FreeDroidWarn.showWarningOnUpgrade(this, BuildConfig.VERSION_CODE);
 ```
